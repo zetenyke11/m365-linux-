@@ -1,0 +1,37 @@
+{
+  "name": "word-web-unofficial",
+  "version": "1.0.0",
+  "description": "Unofficial Electron desktop wrapper for Microsoft Word for the web",
+  "homepage": "https://github.com/zetenyke11/m365-linux",
+  "main": "main.js",
+  "author": {
+    "name": "zetenyke11",
+    "email": "zetenyke11github@proton.me"
+  },
+  "license": "GPL-2.0-only",
+  "scripts": {
+    "start": "electron .",
+    "build:linux": "electron-builder --linux deb rpm"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "io.github.zetenyke11.wordweb",
+    "productName": "Word Web (Unofficial)",
+        "linux": {
+      "maintainer": "zetenyke11",
+      "category": "Office",
+      "target": [
+        "deb",
+        "rpm"
+      ]
+    },
+    "flatpak": {
+      "runtimeVersion": "26.08",
+      "baseVersion": "26.08",
+      "branch": "stable"
+    }
+}
+}
