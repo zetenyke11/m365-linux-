@@ -30,6 +30,8 @@ Available package formats:
 - Flatpak bundles (`.flatpak`)
 
 ARM64 packages have been built but have not yet been verified on physical ARM64 hardware. Availability of compatible runtimes and system dependencies may vary by distribution.
+## Icons
+Icons are left out on purpose because not everyone prefers the modern icons, so there is no default icon kit for this project, only the default electron, and its up to the user to choose their own visual style and era of icons
 
 ## Installation
 
